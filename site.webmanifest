@@ -1,0 +1,11 @@
+{
+    "name": "Simple2Do",
+    "short_name": "simple2do",
+    "icons":
+        [
+            {"src":"/assets/todo-icon.png","sizes":"512x512","type":"image/png"}
+        ],
+    "theme_color": "#ecf0f8",
+    "background_color": "#ecf0f8",
+    "display": "standalone"
+}
