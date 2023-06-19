@@ -4,27 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/assets/todo-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" href="assets/todo-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="style.css"></link>
-    <title>Messy Todo</title>
+    <title>Simple2Do</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="assets/todo-icon.png">
         <label class="menu-btn">
-            <input type="checkbox">
+            <input type="checkbox" id="menu-checkbox">
         </label>
         <aside class="sidebar">
             <nav>
-                <div id="clear">Clear data</div>
-                <div>Attributions:</div>
-                <div><a href="https://www.flaticon.com/free-icon/list_4472515">To do list icon</a></div>
-                <div><a href="https://www.flaticon.com/free-icon/recycle-bin_3976961">Delete icon</a></div>
+                <details>
+                    <summary>About Simple2Do</summary>
+                    <p>A simple todo app for things that are simple to do!</p>
+                    <p>Works 100% offline, all your data is stored locally.</p>
+                </details>
+                <details>
+                    <summary>How to install</summary>
+                    <p>iPhone/iOS: Open in Safari, tap on share <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/share-rounded.png" class="icon"/> and "Add to Home Screen".</p>
+                    <p>Android: Tap on browser settings <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/menu-2.png" class="icon"/> and "Add to Home Screen"</p>
+                </details>
+                <details id="clear-drop">
+                    <summary>Clear Data</summary>
+                    <p id="clear" class="clear-btn">Delete all data</p>
+                </details>
+                <details class="bottom">
+                    <summary>Attributions</summary>
+                    <p><a href="https://www.flaticon.com/free-icon/list_4472515">To do list icon</a></p>
+                    <p><a href="https://www.flaticon.com/free-icon/recycle-bin_3976961">Delete icon</a></p>
+                </details>
             </nav>
         </aside>
     </header>
-    <main>
+    <main id="main">
+        <img class="logo" src="assets/todo-icon.png">
         <section class="container" id="todo-input">
             <input id="todo-text" name="todo" type="text" placeholder="What do you need to do?">
             <button class="primary-btn" id="add-task">Add task</button>
